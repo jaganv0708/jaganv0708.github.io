@@ -4,132 +4,184 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Jagan Velayudham | Site Reliability Engineer</title>
-<meta name="description" content="Jagan Velayudham — Site Reliability Engineer focused on AWS, observability, AIOps, automation and cloud reliability.">
+<meta name="description" content="Professional SRE portfolio of Jagan Velayudham — AWS, Terraform, Observability, Automation and Production Reliability.">
 <style>
-:root{--bg:#071018;--panel:#0d1822;--panel2:#101f2c;--text:#edf6ff;--muted:#91a5b7;--line:#1d3445;--accent:#5eead4;--accent2:#60a5fa;--max:1160px}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 80% 0%,#12344a 0,transparent 32%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Arial,sans-serif;line-height:1.6}
-a{color:inherit;text-decoration:none}.wrap{max-width:var(--max);margin:auto;padding:0 24px}
-nav{position:sticky;top:0;z-index:20;background:rgba(7,16,24,.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
-.nav{height:70px;display:flex;align-items:center;justify-content:space-between}.logo{font-weight:800;letter-spacing:.08em}.logo span{color:var(--accent)}
-.links{display:flex;gap:22px;color:var(--muted);font-size:.92rem}.links a:hover{color:var(--text)}
-.hero{padding:105px 0 80px;min-height:650px;display:grid;grid-template-columns:1.25fr .75fr;gap:60px;align-items:center}
-.kicker{color:var(--accent);font-weight:700;letter-spacing:.13em;text-transform:uppercase;font-size:.8rem}
-h1{font-size:clamp(3rem,7vw,5.8rem);line-height:.98;margin:16px 0 22px;letter-spacing:-.06em}
-h1 em{font-style:normal;color:#b9c9d8}.lead{font-size:1.15rem;color:var(--muted);max-width:700px}
-.cta{display:flex;gap:12px;margin-top:30px;flex-wrap:wrap}.btn{padding:12px 18px;border:1px solid var(--line);border-radius:10px;font-weight:700}.primary{background:var(--accent);color:#06201d;border-color:var(--accent)}.btn:hover{transform:translateY(-1px)}
-.terminal{background:#061018;border:1px solid var(--line);border-radius:18px;box-shadow:0 25px 80px rgba(0,0,0,.3);overflow:hidden}.termbar{padding:12px 16px;border-bottom:1px solid var(--line);color:var(--muted);font-size:.8rem}.term{padding:24px;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:.86rem}.prompt{color:var(--accent)}.blue{color:var(--accent2)}.dim{color:#6f8799}.cursor{display:inline-block;width:8px;height:16px;background:var(--accent);vertical-align:-3px;animation:blink 1s infinite}@keyframes blink{50%{opacity:0}}
-section{padding:85px 0;border-top:1px solid var(--line)}.eyebrow{color:var(--accent);font-size:.75rem;text-transform:uppercase;letter-spacing:.15em;font-weight:800}h2{font-size:2.4rem;letter-spacing:-.04em;margin:8px 0 12px}.section-intro{color:var(--muted);max-width:760px}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:34px}.card{background:linear-gradient(145deg,var(--panel),rgba(13,24,34,.6));border:1px solid var(--line);border-radius:16px;padding:23px}.card h3{margin:0 0 8px}.card p{color:var(--muted);margin:0}.tag{display:inline-block;padding:5px 9px;border:1px solid var(--line);border-radius:999px;color:#b8ccdc;font-size:.74rem;margin:4px 4px 0 0}
-.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:30px}.metric{padding:22px;border-left:2px solid var(--accent);background:var(--panel)}.metric strong{display:block;font-size:2rem}.metric span{color:var(--muted);font-size:.84rem}
-.timeline{margin-top:35px;border-left:1px solid var(--line);padding-left:28px}.role{position:relative;margin:0 0 35px}.role:before{content:"";position:absolute;left:-34px;top:7px;width:9px;height:9px;background:var(--accent);border-radius:50%;box-shadow:0 0 0 5px var(--bg)}.role h3{margin:0}.date{color:var(--accent);font-size:.85rem}.role p{color:var(--muted);margin:7px 0}
-.arch{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:35px;align-items:center}.node{background:var(--panel);border:1px solid var(--line);padding:18px 10px;border-radius:12px;text-align:center}.arrow{text-align:center;color:var(--accent);font-size:1.5rem}
-.project{display:flex;flex-direction:column;min-height:245px}.project .bottom{margin-top:auto;padding-top:16px}.project a{color:var(--accent);font-weight:700}
-footer{padding:55px 0;color:var(--muted);border-top:1px solid var(--line)}footer strong{color:var(--text)}
-@media(max-width:850px){.hero{grid-template-columns:1fr;padding-top:75px}.grid{grid-template-columns:1fr 1fr}.metrics{grid-template-columns:1fr 1fr}.arch{grid-template-columns:1fr}.arrow{transform:rotate(90deg)}.links{display:none}}
-@media(max-width:520px){.grid,.metrics{grid-template-columns:1fr}h1{font-size:3.3rem}}
+:root{
+  --bg:#f7f8fa; --surface:#ffffff; --ink:#101828; --muted:#667085;
+  --line:#e4e7ec; --accent:#175cd3; --accent2:#eff4ff; --dark:#0b1220;
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+a{color:inherit;text-decoration:none}
+.container{width:min(1120px,92%);margin:auto}
+nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{height:68px;display:flex;align-items:center;justify-content:space-between}
+.brand{font-weight:800;letter-spacing:-.02em}.brand span{color:var(--accent)}
+.links{display:flex;gap:24px;font-size:14px;color:#475467}
+.links a:hover{color:var(--accent)}
+.hero{background:var(--surface);padding:92px 0 70px;border-bottom:1px solid var(--line)}
+.eyebrow{font-size:13px;font-weight:750;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+h1{font-size:clamp(44px,7vw,78px);line-height:1.02;letter-spacing:-.055em;margin:16px 0 20px;max-width:900px}
+.hero p{font-size:20px;color:var(--muted);max-width:780px;margin:0 0 30px}
+.cta{display:inline-flex;gap:10px;padding:12px 18px;border-radius:8px;background:var(--dark);color:#fff;font-weight:700;font-size:14px}
+.cta.secondary{background:#fff;color:var(--ink);border:1px solid var(--line);margin-left:8px}
+.metrics{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:55px}
+.metric{padding:20px;background:var(--bg);border:1px solid var(--line);border-radius:10px}
+.metric strong{display:block;font-size:30px;letter-spacing:-.03em}.metric span{font-size:12px;color:var(--muted)}
+section{padding:78px 0}
+.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:30px}
+h2{font-size:34px;letter-spacing:-.035em;margin:0}.section-head p{max-width:560px;color:var(--muted);margin:0}
+.profile{display:grid;grid-template-columns:1.1fr .9fr;gap:28px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:28px}
+.card h3{margin:0 0 8px;font-size:20px}.card p{color:var(--muted);margin:8px 0}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}.tag{padding:6px 10px;border-radius:999px;background:var(--accent2);color:#194185;font-size:12px;font-weight:650}
+.timeline{border-left:2px solid var(--line);padding-left:26px}.role{position:relative;margin-bottom:35px}.role:before{content:"";position:absolute;left:-35px;top:8px;width:12px;height:12px;border-radius:50%;background:var(--accent)}
+.role h3{margin:0}.role .meta{font-size:13px;color:var(--muted)}.role ul{padding-left:20px;margin-bottom:0}
+.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.project{position:relative}.project .number{font-size:12px;color:var(--accent);font-weight:800;letter-spacing:.1em}.project h3{font-size:23px;margin:8px 0}.project ul{padding-left:20px;color:#475467}
+.arch{background:var(--dark);color:#fff;border-radius:16px;padding:34px;overflow:auto}
+.arch pre{margin:0;font:14px/1.7 ui-monospace,SFMono-Regular,Menlo,monospace;white-space:pre-wrap}
+.stack{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.stack .card{padding:22px}.stack h3{font-size:15px}.stack p{font-size:13px}
+.initiative{display:grid;grid-template-columns:1fr 1fr;gap:18px}.status{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:#027a48;background:#ecfdf3;padding:5px 8px;border-radius:999px}
+footer{background:var(--dark);color:#fff;padding:55px 0}.footer-grid{display:flex;justify-content:space-between;gap:30px}.footer-grid p{color:#98a2b3}.footer-links{display:flex;gap:18px;font-size:14px}
+@media(max-width:850px){.metrics{grid-template-columns:repeat(2,1fr)}.profile,.projects,.initiative{grid-template-columns:1fr}.stack{grid-template-columns:repeat(2,1fr)}.links{display:none}}
+@media(max-width:520px){.hero{padding-top:65px}.metrics{grid-template-columns:1fr 1fr}.stack{grid-template-columns:1fr}section{padding:55px 0}.cta.secondary{margin-left:0;margin-top:8px}.hero p{font-size:17px}}
 </style>
 </head>
 <body>
-<nav><div class="wrap nav"><div class="logo">JAGAN<span>.SRE</span></div><div class="links"><a href="#about">About</a><a href="#impact">Impact</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a></div></div></nav>
+<nav><div class="container nav">
+  <a class="brand" href="#">Jagan<span>.</span></a>
+  <div class="links"><a href="#profile">Profile</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#reliability">Reliability</a><a href="#contact">Contact</a></div>
+</div></nav>
 
-<header class="wrap hero">
-<div>
-<div class="kicker">Site Reliability Engineer · AWS · Observability</div>
-<h1>Reliable systems.<br><em>Automated operations.</em></h1>
-<p class="lead">I build and operate reliable production systems on AWS, combining observability, AIOps-style automation, infrastructure as code and disciplined incident management.</p>
-<div class="cta"><a class="btn primary" href="#projects">Explore my work</a><a class="btn" href="#contact">Get in touch</a></div>
+<header class="hero">
+<div class="container">
+  <div class="eyebrow">Site Reliability Engineer</div>
+  <h1>Reliable systems.<br>Observable platforms.<br>Automated operations.</h1>
+  <p>5+ years of experience in AWS production reliability, observability, Infrastructure as Code, synthetic monitoring, incident management and operational automation.</p>
+  <a class="cta" href="#projects">Explore engineering work →</a>
+  <a class="cta secondary" href="#contact">Contact</a>
+  <div class="metrics">
+    <div class="metric"><strong>5+</strong><span>Years SRE / DevOps Experience</span></div>
+    <div class="metric"><strong>15+</strong><span>AWS Accounts — Terraform Automation</span></div>
+    <div class="metric"><strong>25+</strong><span>New Relic Dashboards</span></div>
+    <div class="metric"><strong>30+</strong><span>Application Websites Monitored</span></div>
+    <div class="metric"><strong>5+</strong><span>ICMS Applications</span></div>
+  </div>
 </div>
-<div class="terminal">
-<div class="termbar">jagan@sre-portfolio ~ production</div>
-<div class="term">
-<span class="prompt">$</span> reliability status<br><br>
-<span class="dim">service</span> &nbsp; <span class="blue">production</span><br>
-<span class="dim">availability</span> &nbsp; 99.9%+<br>
-<span class="dim">synthetic journeys</span> &nbsp; 20+<br>
-<span class="dim">alert fatigue</span> &nbsp; -40%<br>
-<span class="dim">MTTD</span> &nbsp; -25%<br><br>
-<span class="prompt">$</span> terraform plan<br>
-<span class="blue">Plan:</span> automation enabled<br><span class="cursor"></span>
-</div></div>
 </header>
 
-<section id="about"><div class="wrap">
-<div class="eyebrow">01 / About</div><h2>Engineering for reliability.</h2>
-<p class="section-intro">Site Reliability Engineer with 4+ years of experience across production reliability, AWS cloud infrastructure, observability, incident response and deployment automation. My focus is reducing operational toil while making systems easier to understand, operate and recover.</p>
-<div class="grid">
-<div class="card"><h3>Reliability</h3><p>SLO/SLA/SLI tracking, incident response, RCA, PIRs, on-call operations and runbooks.</p></div>
-<div class="card"><h3>Observability</h3><p>New Relic, Grafana and CloudWatch dashboards, alerting, log analytics and SLO views.</p></div>
-<div class="card"><h3>Automation</h3><p>Terraform, GitHub Actions, Jenkins, Python, Bash and Playwright synthetic monitoring.</p></div>
-</div>
-</div></section>
+<section id="profile"><div class="container">
+<div class="section-head"><div><div class="eyebrow">01 / Engineering Profile</div><h2>Production reliability with an automation mindset.</h2></div>
+<p>Focused on making production systems measurable, actionable and repeatable — from infrastructure and monitoring to incident response and continuous automation.</p></div>
+<div class="profile">
+<div class="card"><h3>What I engineer</h3>
+<p>Production AWS infrastructure and application reliability across multiple projects, with hands-on ownership of monitoring, alerting, synthetic checks, dashboards, incident response and Infrastructure as Code.</p>
+<div class="tags"><span class="tag">AWS</span><span class="tag">Terraform</span><span class="tag">Observability</span><span class="tag">SRE</span><span class="tag">Incident Management</span><span class="tag">Automation</span><span class="tag">CI/CD</span></div></div>
+<div class="card"><h3>Reliability lifecycle</h3>
+<p><b>Observe</b> → establish signals and dashboards</p><p><b>Detect</b> → actionable alerts and synthetic checks</p><p><b>Investigate</b> → triage, logs, metrics and collaboration</p><p><b>Automate</b> → Terraform, Playwright and CI/CD</p><p><b>Prevent</b> → RCA/PIR, alert tuning and improved coverage</p></div>
+</div></div></section>
 
-<section id="impact"><div class="wrap">
-<div class="eyebrow">02 / Impact</div><h2>Measured operational impact.</h2>
-<p class="section-intro">Selected outcomes from production reliability and automation work.</p>
-<div class="metrics">
-<div class="metric"><strong>99.9%+</strong><span>uptime targets consistently achieved</span></div>
-<div class="metric"><strong>40%</strong><span>alert fatigue reduction</span></div>
-<div class="metric"><strong>25%</strong><span>estimated MTTD reduction</span></div>
-<div class="metric"><strong>30%</strong><span>manual release effort reduction</span></div>
-</div>
-</div></section>
-
-<section id="projects"><div class="wrap">
-<div class="eyebrow">03 / Selected Work</div><h2>Projects & case studies.</h2>
-<p class="section-intro">Real production-oriented work, presented as technical case studies. Add repository links as you publish sanitized examples.</p>
-<div class="grid">
-<div class="card project"><div><h3>Terraform AWS Alert Automation</h3><p>Reusable Infrastructure-as-Code approach for defining AWS CloudWatch monitoring and alerts consistently across environments and projects.</p><div><span class="tag">Terraform</span><span class="tag">AWS</span><span class="tag">CloudWatch</span></div></div><div class="bottom"><a href="#contact">Case study →</a></div></div>
-<div class="card project"><div><h3>New Relic SRE Observability</h3><p>Operational dashboards and alerting around availability, latency, errors, SLOs and application health to support production decisions.</p><div><span class="tag">New Relic</span><span class="tag">NRQL</span><span class="tag">SLO</span></div></div><div class="bottom"><a href="#contact">Case study →</a></div></div>
-<div class="card project"><div><h3>Playwright Synthetic Monitoring</h3><p>20+ critical user journeys automated to detect production regressions before they become customer-impacting incidents.</p><div><span class="tag">Playwright</span><span class="tag">Synthetic</span><span class="tag">Monitoring</span></div></div><div class="bottom"><a href="#contact">Case study →</a></div></div>
-<div class="card project"><div><h3>AIOps Alert Optimization</h3><p>Monitoring and alert configuration improvements focused on reducing noise, improving signal quality and accelerating detection.</p><div><span class="tag">AIOps</span><span class="tag">Alerting</span><span class="tag">MTTD</span></div></div><div class="bottom"><a href="#contact">Case study →</a></div></div>
-<div class="card project"><div><h3>CI/CD Deployment Automation</h3><p>Automated repeatable deployments using GitHub Actions and Terraform to reduce manual release effort across environments.</p><div><span class="tag">GitHub Actions</span><span class="tag">Terraform</span><span class="tag">CI/CD</span></div></div><div class="bottom"><a href="#contact">Case study →</a></div></div>
-<div class="card project"><div><h3>Incident Response & PIR</h3><p>Structured P1/P2 response, mitigation, stakeholder communication and blameless post-incident reviews with remediation tracking.</p><div><span class="tag">SRE</span><span class="tag">RCA</span><span class="tag">ITSM</span></div></div><div class="bottom"><a href="#contact">Case study →</a></div></div>
-</div>
-</div></section>
-
-<section><div class="wrap">
-<div class="eyebrow">04 / Architecture</div><h2>Reliability engineering workflow.</h2>
-<p class="section-intro">A simplified view of how automation, infrastructure and observability connect in a production workflow.</p>
-<div class="arch">
-<div class="node">GitHub<br><small>Source</small></div><div class="arrow">→</div>
-<div class="node">Actions<br><small>CI/CD</small></div><div class="arrow">→</div>
-<div class="node">Terraform<br><small>Infrastructure</small></div>
-<div class="node">AWS<br><small>EC2 · ECS · RDS · S3</small></div><div class="arrow">→</div>
-<div class="node">CloudWatch<br><small>Metrics & Logs</small></div><div class="arrow">→</div>
-<div class="node">New Relic<br><small>Observability</small></div>
-</div>
-</div></section>
-
-<section id="experience"><div class="wrap">
-<div class="eyebrow">05 / Experience</div><h2>Career timeline.</h2>
+<section id="experience"><div class="container">
+<div class="section-head"><div><div class="eyebrow">02 / Experience</div><h2>Professional experience</h2></div></div>
 <div class="timeline">
-<div class="role"><div class="date">July 2022 — Present</div><h3>Site Reliability Engineer · Forbes Advisor</h3><p>Own production reliability across 3+ AWS accounts. Lead incident response, SLO/SLI tracking, observability, synthetic monitoring, automation, runbooks and cross-functional reliability initiatives.</p></div>
-<div class="role"><div class="date">November 2020 — March 2022</div><h3>AWS DevOps Trainee · Sona Comstar</h3><p>Worked with AWS infrastructure, CloudWatch, CI/CD using Git/GitHub/Jenkins, and Bash/Python automation. Recognized as Best Performer of the Month in February 2021.</p></div>
-<div class="role"><div class="date">Education</div><h3>B.E. Mechanical Engineering · Dhanalakshmi College of Engineering</h3><p>Chennai · April 2019</p></div>
+<div class="role"><h3>Forbes Advisor — Site Reliability Engineer</h3><div class="meta">Chennai, India · July 2022 – Present</div>
+<ul>
+<li>Support production reliability and availability across multiple AWS environments and applications.</li>
+<li>Handle P1/P2 incidents through alert triage, investigation, mitigation, escalation, stakeholder communication and resolution.</li>
+<li>Build and maintain New Relic observability, CloudWatch monitoring, dashboards and actionable alerting.</li>
+<li>Implemented 25+ New Relic dashboards with corresponding widgets and alert configurations.</li>
+<li>Developed and maintained Playwright synthetic monitoring across 30+ application websites and critical journeys.</li>
+<li>Currently developing reusable Terraform modules to automate CloudWatch alert and dashboard creation across 15+ AWS accounts.</li>
+<li>Automate multi-environment deployment workflows using GitHub Actions and Terraform; maintain operational runbooks and monitoring practices.</li>
+</ul></div>
+<div class="role"><h3>Sona Comstar — AWS DevOps Trainee</h3><div class="meta">Chengalpattu, India · November 2020 – March 2022</div>
+<ul><li>Provisioned and supported AWS infrastructure including EC2, S3, RDS, load balancers and IAM.</li><li>Configured CloudWatch dashboards, alerts and log analytics for infrastructure visibility.</li><li>Built CI/CD pipelines using Git, GitHub and Jenkins.</li><li>Automated repetitive operational tasks using Bash and Python.</li></ul></div>
+</div></div></section>
+
+<section id="projects"><div class="container">
+<div class="section-head"><div><div class="eyebrow">03 / Engineering Case Studies</div><h2>Selected reliability initiatives</h2></div><p>Project scope is presented at a sanitized, professional level to avoid exposing internal production information.</p></div>
+<div class="projects">
+<div class="card project"><div class="number">CASE STUDY 01</div><h3>ICMS — AU, CA, IT & USAT</h3><p>End-to-end AWS infrastructure, observability and production reliability across 5+ ICMS applications.</p><ul><li>CloudWatch and New Relic monitoring</li><li>Playwright website/API automation</li><li>P1–P4 incident response and remediation</li><li>CloudFront, WAF, ECS, ECR, S3, Route 53 and related AWS services</li></ul></div>
+<div class="card project"><div class="number">CASE STUDY 02</div><h3>Enterprise Java Applications</h3><p>Production monitoring and reliability support for LLC, Enterprise, PCS and Credible applications.</p><ul><li>Application and infrastructure observability</li><li>Automated website/API checks</li><li>CloudWatch and New Relic alerting</li><li>Incident investigation with development teams</li></ul></div>
+<div class="card project"><div class="number">CASE STUDY 03</div><h3>Multi-Account Terraform Monitoring</h3><p>Reusable Infrastructure-as-Code patterns for scalable monitoring automation.</p><ul><li>15+ AWS accounts in scope</li><li>CloudWatch alerts and dashboards</li><li>Priority-based P1/P2/P3/P4 patterns</li><li>Standardized, repeatable monitoring provisioning</li></ul></div>
+<div class="card project"><div class="number">CASE STUDY 04</div><h3>New Relic Observability</h3><p>Application and infrastructure visibility through dashboards, widgets, NRQL and alerts.</p><ul><li>25+ dashboards implemented</li><li>Request volume, latency and 4xx/5xx signals</li><li>Availability and SLO-oriented views</li><li>Synthetic and performance monitoring</li></ul></div>
+<div class="card project"><div class="number">CASE STUDY 05</div><h3>Playwright Synthetic Monitoring</h3><p>Automated production website and API validation across a broad application footprint.</p><ul><li>30+ application websites</li><li>Critical journey and API validation</li><li>Scheduled GitHub Actions execution</li><li>Screenshots and performance signals for troubleshooting</li></ul></div>
+<div class="card project"><div class="number">CASE STUDY 06</div><h3>FBCLID → GCP Automation</h3><p>Python automation for extracting traffic data and transferring structured reports to Google Cloud Storage.</p><ul><li>New Relic GraphQL data retrieval</li><li>CSV generation and large-result handling</li><li>GCP Cloud Storage integration</li><li>GitHub Actions scheduling and cloud authentication</li></ul></div>
+</div></div></section>
+
+<section id="reliability"><div class="container">
+<div class="section-head"><div><div class="eyebrow">04 / Reliability Engineering</div><h2>Engineering practices</h2></div></div>
+<div class="stack">
+<div class="card"><h3>SLO / SLI / SLA</h3><p>Reliability objectives, service indicators and operational targets.</p></div>
+<div class="card"><h3>Golden Signals</h3><p>Latency, traffic, errors and saturation as core service signals.</p></div>
+<div class="card"><h3>Incident Response</h3><p>P1–P4 triage, mitigation, escalation, RCA/PIR and preventive actions.</p></div>
+<div class="card"><h3>Alert Engineering</h3><p>Threshold design, alert tuning, noise reduction and actionable monitoring.</p></div>
 </div>
 </div></section>
 
-<section><div class="wrap">
-<div class="eyebrow">06 / Stack</div><h2>Tools I work with.</h2>
-<div class="grid">
-<div class="card"><h3>AWS</h3><p>EC2 · ECS · RDS · S3 · IAM · Load Balancers · Athena · CloudWatch</p></div>
-<div class="card"><h3>Observability</h3><p>New Relic · Grafana · CloudWatch · NRQL · Log Analytics · SLO dashboards</p></div>
-<div class="card"><h3>DevOps</h3><p>Terraform · Ansible · Docker · GitHub Actions · Jenkins · Git</p></div>
-<div class="card"><h3>Reliability</h3><p>SLO/SLA/SLI · Incident Management · RCA · PIR · PagerDuty · Zenduty</p></div>
-<div class="card"><h3>Automation</h3><p>Python · Bash · PowerShell · Playwright · Monitoring automation</p></div>
-<div class="card"><h3>Cloud Native</h3><p>Kubernetes · Amazon EKS · Helm — currently expanding hands-on expertise</p></div>
-</div>
+<section><div class="container">
+<div class="section-head"><div><div class="eyebrow">05 / Architecture</div><h2>Monitoring automation at scale</h2></div></div>
+<div class="arch"><pre>
+                     GitHub / CI
+                         |
+                         v
+                    Terraform
+                 Reusable Modules
+                         |
+        +----------------+----------------+
+        |                |                |
+        v                v                v
+    AWS Account 1    AWS Account 2    ... 15+ Accounts
+        |                |                |
+        +----------------+----------------+
+                         |
+                   CloudWatch
+                  /           \
+                 v             v
+              Alerts       Dashboards
+                 \             /
+                  \           /
+                   v         v
+                 New Relic Observability
+                         |
+                         v
+                 Incident / Operations
+                         |
+                         v
+                 Investigation & RCA
+</pre></div>
 </div></section>
 
-<section id="contact"><div class="wrap">
-<div class="eyebrow">07 / Contact</div><h2>Let's build reliable systems.</h2>
-<p class="section-intro">For SRE, DevOps, cloud infrastructure and observability opportunities, reach out directly.</p>
-<div class="cta">
-<a class="btn primary" href="mailto:jaganv0708@gmail.com">Email me</a>
-<a class="btn" href="https://linkedin.com/in/jagan-velayutham" target="_blank">LinkedIn</a>
-</div>
-</div></section>
+<section><div class="container">
+<div class="section-head"><div><div class="eyebrow">06 / Automation Roadmap</div><h2>From automated monitoring to intelligent operations</h2></div></div>
+<div class="initiative">
+<div class="card"><span class="status">In progress</span><h3>Terraform monitoring automation</h3><p>Reusable modules are being developed to automate CloudWatch alert and dashboard provisioning across 15+ AWS accounts.</p></div>
+<div class="card"><span class="status">Planned</span><h3>AI-assisted alert investigation</h3><p>Planning an AI user-agent bot to investigate alerts raised in Slack, correlate available monitoring signals and produce an initial troubleshooting summary for the SRE team.</p></div>
+</div></div></section>
 
-<footer><div class="wrap"><strong>Jagan Velayudham</strong> · Site Reliability Engineer<br>Built around AWS, observability, automation and reliability engineering.</div></footer>
-</body>
-</html>
+<section><div class="container">
+<div class="section-head"><div><div class="eyebrow">07 / Technology</div><h2>Technical toolkit</h2></div></div>
+<div class="stack">
+<div class="card"><h3>Cloud</h3><p>AWS · ECS · Fargate · ECR · EC2 · Lambda · S3 · RDS · DynamoDB · EFS · CloudFront · WAF · Route 53 · API Gateway · IAM</p></div>
+<div class="card"><h3>Observability</h3><p>New Relic · NRQL · APM · Synthetics · CloudWatch · Dashboards · Alerting · Log Analytics · Grafana</p></div>
+<div class="card"><h3>Infrastructure</h3><p>Terraform · Terraform Modules · Docker · EKS · Helm · Ansible</p></div>
+<div class="card"><h3>Automation & CI/CD</h3><p>Playwright · TypeScript · Node.js · Python · Bash · GitHub Actions · Jenkins · Git</p></div>
+</div></div></section>
+
+<section><div class="container">
+<div class="section-head"><div><div class="eyebrow">08 / Recognition</div><h2>Achievements & credentials</h2></div></div>
+<div class="projects">
+<div class="card"><h3>Recognition</h3><p><b>Star of the Month — Q2 2025</b><br>Forbes Advisor</p><p><b>Recognition Shield — 3 Years of Service</b><br>Forbes Advisor</p><p><b>Best Performer of the Month — February 2021</b><br>Sona Comstar</p></div>
+<div class="card"><h3>Continuous learning</h3><p><b>AWS Certified CloudOps Engineer — Associate</b><br>Currently pursuing</p><p><b>AWS Cloud Security / Security Specialty</b><br>Building hands-on knowledge</p><p><b>Education:</b> B.E., Mechanical Engineering — Dhanalakshmi College of Engineering, Chennai</p></div>
+</div></div></section>
+
+<footer id="contact"><div class="container footer-grid">
+<div><div class="eyebrow">Let's connect</div><h2 style="color:#fff;margin-top:8px">Jagan Velayudham</h2><p>Site Reliability Engineer · AWS · Observability · Terraform · Automation</p></div>
+<div class="footer-links">
+<a href="mailto:jaganv0708@gmail.com">Email</a>
+<a href="https://www.linkedin.com/in/jagan-velayutham/" target="_blank">LinkedIn</a>
+</div>
+</div></footer>
+</body></html>
